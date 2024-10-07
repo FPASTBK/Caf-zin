@@ -1,0 +1,20 @@
+.font-small {
+  font-family: clicker script;
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.font-mid {
+  font-family: playfair display;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.font-larg {
+  font-family: clicker script;
+  font-weight: 500;
+  font-size: 220px;
+  color: #ffffff;
+}
