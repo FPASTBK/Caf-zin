@@ -1,0 +1,49 @@
+.section-assin {
+  align-content: center;
+  margin-bottom: 150px;
+}
+
+.section-assin-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.section-assin-top h2,
+p {
+  grid-column: 1/3;
+}
+
+.section-assin-top h2 {
+  margin-bottom: 20px;
+}
+
+.section-assin img {
+  z-index: -100;
+  position: absolute;
+  margin-bottom: 0px;
+}
+
+.section-input {
+  display: flex;
+  margin-left: 362px;
+  width: 624px;
+  height: 66px;
+}
+#email {
+  width: 505px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.button-section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: playfair display;
+  font-weight: 700;
+  font-size: 22px;
+  background-color: #f9c06a;
+  color: #1e1e1e;
+  width: 137px;
+  height: 66px;
+  border-radius: 0px 4px 4px 0px;
+}
