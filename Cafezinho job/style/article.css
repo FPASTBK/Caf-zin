@@ -2,7 +2,7 @@ article {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 760px;
-  margin-bottom: 164px;
+  margin-bottom: 240px;
 }
 
 .article-top {
@@ -24,17 +24,30 @@ article {
   z-index: 100px;
 }
 
-/*.article-feed::after {
-  display: grid;
-  content: "→";
-  font-size: 24px;
-  justify-content: center;
+.article-feed::after {
+  position: absolute;
+  margin-left: 935px;
+  content: "⭢";
+  text-align: center;
+  font-size: 25px;
   color: #603809;
-  width: 70px;
-  height: 70px;
   background-color: #f9c06a;
   border-radius: 4px;
-}*/
+  padding: 30px 30px;
+}
+
+article::after {
+  position: absolute;
+  margin-left: 156px;
+  margin-top: 400px;
+  content: "⭠";
+  text-align: center;
+  font-size: 25px;
+  color: #603809;
+  background-color: #f9c06a;
+  border-radius: 4px;
+  padding: 30px 30px;
+}
 
 .article-top p {
   justify-self: center;
@@ -57,7 +70,8 @@ article {
 }
 
 .article-feed p {
-  padding: 100px;
+  padding: 150px;
+  text-align: center;
   align-content: center;
 }
 
