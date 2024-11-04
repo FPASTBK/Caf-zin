@@ -105,3 +105,25 @@ article::after {
 .article-avtr {
   margin-top: -90px;
 }
+
+/*RESPONSIVO*/
+
+@media (max-width: 991px) {
+  article {
+    padding: 500px 0px 150px 0px;
+  }
+  .article-top p {
+    margin-top: -70px;
+  }
+  .article-feed p {
+    padding: 80px 150px 150px 150px;
+  }
+  .article-feed {
+    height: 450px;
+  }
+  article::after,
+  .article-feed::after,
+  .article-feed::before {
+    display: none;
+  }
+}

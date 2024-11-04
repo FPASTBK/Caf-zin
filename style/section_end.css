@@ -29,3 +29,12 @@ p {
 .section-abst a {
   margin-top: 10px;
 }
+
+@media (max-width: 991px) {
+  .section-abst {
+    margin: 80px 350px auto 50px;
+  }
+  .section-abst h1 {
+    font-size: 40px;
+  }
+}

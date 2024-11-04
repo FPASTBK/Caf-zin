@@ -24,3 +24,11 @@
 .section-content h1 {
   width: 588px;
 }
+
+/*RESPONSIVO*/
+
+@media (max-width: 991px) {
+  .section-1 {
+    padding: 0px 15px;
+  }
+}

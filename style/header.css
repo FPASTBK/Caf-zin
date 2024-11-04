@@ -67,7 +67,10 @@ header .button {
 }
 
 @media (max-width: 991px) {
-  .img-position {
-    max-width: 1000px;
+  .header-menu-2 h1 {
+    font-size: 150px;
+  }
+  header {
+    margin-bottom: 0px;
   }
 }
