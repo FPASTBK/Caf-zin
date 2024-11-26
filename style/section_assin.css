@@ -67,4 +67,13 @@ p {
   .section-assin {
     margin-bottom: 50px;
   }
+  .section-input {
+    margin-left: -105px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-input {
+    margin-left: -150px;
+  }
 }

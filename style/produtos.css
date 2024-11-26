@@ -140,4 +140,15 @@ p {
   .produtos-footer {
     margin-bottom: 50px;
   }
+  .section-font-top {
+    font-size: 40px;
+  }
+  .qualidade-produtos h1 {
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 767px) {
+  .produtos-top h1 {
+    width: 700px;
+  }
 }

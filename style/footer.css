@@ -44,3 +44,24 @@ a {
   margin-right: auto;
   gap: 68px;
 }
+
+/*RESPONSIVO*/
+
+@media (max-width: 991px) {
+  footer {
+    margin-top: -30px;
+  }
+  .container-footer {
+    padding-top: 40px;
+    padding-left: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    padding: 30px 30px;
+  }
+}

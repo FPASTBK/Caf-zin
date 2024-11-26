@@ -74,3 +74,35 @@ header .button {
     margin-bottom: 0px;
   }
 }
+
+@media (max-width: 767px) {
+  .header-menu {
+    width: 600px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-menu-2 {
+    width: 500px;
+    height: 375px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-left: -70px;
+    padding-top: 0px;
+  }
+  .header-menu-2 p {
+    font-size: 18px;
+    grid-column: 1/3;
+  }
+  .header-menu-2 h1 {
+    font-size: 100px;
+  }
+  .header-menu-2 h2 {
+    font-size: 20px;
+  }
+  .button {
+    width: 100px;
+    height: 38px;
+    font-size: 13px;
+  }
+}

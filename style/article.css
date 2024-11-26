@@ -126,4 +126,16 @@ article::after {
   .article-feed::before {
     display: none;
   }
+  .article-top h1 {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-feed {
+    width: 767px;
+  }
+  .article-top {
+    width: 767px;
+  }
 }
