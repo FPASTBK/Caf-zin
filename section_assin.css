@@ -71,3 +71,34 @@ p {
     margin-left: -105px;
   }
 }
+
+@media (max-width: 767px) {
+  .section-assin-top {
+    grid-template-columns: 1fr;
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .section-assin-top h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .section-assin-top p {
+    font-size: 16px;
+  }
+  .section-assin .section-input {
+    width: 500px;
+    height: 30px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-section {
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+  }
+}

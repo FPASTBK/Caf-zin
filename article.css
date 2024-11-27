@@ -1,0 +1,148 @@
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*margin-top: 760px;
+  margin-bottom: 240px;*/
+  margin: auto auto;
+  padding-top: 760px;
+  padding-bottom: 240px;
+  justify-content: center;
+}
+
+.article-top {
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  width: 890px;
+  height: 194px;
+}
+
+.article-feed::before {
+  content: "“";
+  font-family: playfair display;
+  font-weight: 700;
+  font-size: 220px;
+  color: #603809;
+  position: absolute;
+  margin-bottom: 350px;
+  z-index: 100px;
+}
+
+.article-feed::after {
+  position: absolute;
+  margin-left: 935px;
+  content: "⭢";
+  text-align: center;
+  font-size: 25px;
+  color: #603809;
+  background-color: #f9c06a;
+  border-radius: 4px;
+  padding: 30px 30px;
+}
+
+article::after {
+  position: absolute;
+  margin-left: 156px;
+  margin-top: 400px;
+  content: "⭠";
+  text-align: center;
+  font-size: 25px;
+  color: #603809;
+  background-color: #f9c06a;
+  border-radius: 4px;
+  padding: 30px 30px;
+}
+
+.article-top p {
+  justify-self: center;
+  align-self: center;
+}
+.article-top h1 {
+  grid-column: 1/3;
+}
+
+.article-feed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 980px;
+  height: 524px;
+  background-color: #fff9f1;
+  border: 1px solid #ffeed8;
+  /*margin-left: 193px;*/
+  margin: auto auto;
+  position: relative;
+}
+
+.article-feed p {
+  padding: 150px;
+  text-align: center;
+  align-content: center;
+}
+
+.article-avtr {
+  grid-column: 1/3;
+  justify-self: center;
+  align-content: center;
+}
+
+.article-avtr img {
+  margin-left: 29px;
+  border-radius: 16px;
+}
+
+.article-avtr h3 {
+  margin-left: 12px;
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.article-avtr h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article-avtr {
+  margin-top: -90px;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 991px) {
+  article {
+    padding: 500px 0px 150px 0px;
+  }
+  .article-top p {
+    margin-top: -70px;
+  }
+  .article-feed p {
+    padding: 80px 150px 150px 150px;
+  }
+  .article-feed {
+    height: 450px;
+  }
+  article::after,
+  .article-feed::after,
+  .article-feed::before {
+    display: none;
+  }
+  .article-top h1 {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  article {
+    padding-top: 350px;
+  }
+  .article-feed {
+    width: 700px;
+  }
+  .article-feed p {
+    padding: 60px 100px 110px 100px;
+  }
+  .article-top {
+    width: 700px;
+    font-size: 35px;
+  }
+}

@@ -56,3 +56,31 @@ a {
     padding-left: none;
   }
 }
+
+@media (max-width: 767px) {
+  .container-footer {
+    width: 650px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    padding: 15px 15px;
+  }
+  .footer-img {
+    height: px;
+  }
+  .footer p {
+    font-size: 45px;
+  }
+  .footer {
+    gap: 0px;
+    padding: 0px;
+  }
+  .footer-1 h2 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .footer-1 a {
+    font-size: 14px;
+  }
+}

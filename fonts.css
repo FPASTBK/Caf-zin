@@ -1,0 +1,153 @@
+.font-small {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.font-small-2 {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.font-mid {
+  font-family: clicker script, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.font-mid-2 {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.font-larg {
+  font-family: clicker script, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 13.75rem;
+  color: #ffffff;
+}
+
+.section-font-top {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  color: #603809;
+}
+
+.section-font-text {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #707070;
+}
+
+.section-font-text-2 {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #707070;
+}
+
+.section-font-top-2 {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  color: #ffffff;
+}
+
+.produtos-font-top {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #603809;
+}
+
+.qualidade-font-top {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #603809;
+}
+
+.footer-font-top-nav {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #603809;
+}
+
+.produtos-font-mid {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #707070;
+}
+
+.produtos-font-bottom {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #603809;
+}
+
+.end-font-top {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.end-font-p {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.article-font-p {
+  font-family: playfair display, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #707070;
+}
+
+.article-font-h2 {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #603809;
+}
+
+.article-font-h3 {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #707070;
+}
+
+.footer-font-top {
+  font-family: clicker script, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  color: #ffffff;
+}
+
+.footer-font-top-2 {
+  font-family: playfair display, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.footer-font-text {
+  font-family: playfair display, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}

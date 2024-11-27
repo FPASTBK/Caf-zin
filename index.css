@@ -1,0 +1,27 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./section1.css);
+@import url(./produtos.css);
+@import url(./section_end.css);
+@import url(./article.css);
+@import url(./section_assin.css);
+@import url(./footer.css);
+
+body,
+h1,
+a,
+p {
+  margin: 0px 0px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
