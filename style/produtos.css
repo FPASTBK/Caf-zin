@@ -150,5 +150,104 @@ p {
 @media (max-width: 767px) {
   .produtos-top h1 {
     width: 700px;
+    height: 80px;
+    font-size: 38px;
+    padding-bottom: 20px;
+  }
+  .produtos-top p {
+    font-size: 15px;
+  }
+
+  .qualidade h2 {
+    font-size: 23px;
+    text-align: center;
+    align-self: center;
+  }
+  .qualidade p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .produtos-footer {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .produtos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .produtos-top {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .produtos-top h1 {
+    width: 575px;
+    height: inherit;
+    font-size: 28px;
+  }
+  .produtos-top p {
+    font-size: 13px;
+    text-align: center;
+  }
+  /*PRODUTOS*/
+  .menu-produtos-c {
+    grid-template-columns: 1fr 1fr;
+    height: 420px;
+  }
+  .menu-produtos-c h2 {
+    font-size: 20px;
+  }
+  .menu-produtos-c p {
+    font-size: 13px;
+  }
+  .menu-produtos-c h3 {
+    font-size: 14px;
+  }
+  .menu-produtos-c .button {
+    width: 70px;
+    height: 28px;
+    font-size: 10px;
+  }
+
+  /*QUALIDADE*/
+  .qualidade-produtos h1 {
+    width: 500px;
+  }
+  .qualidade-produtos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .qualidade-produtos h1 {
+    width: 575px;
+    height: 70px;
+    font-size: 28px;
+  }
+  .qualidade-produtos p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /*QUALIDADE-C*/
+  .qualidade {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .qualidade-c {
+    height: 250px;
+  }
+  .qualidade-c h2 {
+    font-size: 20px;
+  }
+  .qualidade-c p {
+    font-size: 13px;
+  }
+
+  /*PRODUTOS-FOOTER*/
+  .produtos-footer {
+    width: 500px;
+    margin: 0px auto;
+    padding-bottom: 50px;
   }
 }

@@ -30,11 +30,43 @@ p {
   margin-top: 10px;
 }
 
+/*RESPONSIVO*/
+
 @media (max-width: 991px) {
   .section-abst {
     margin: 80px 350px auto 50px;
   }
   .section-abst h1 {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-abst {
+    margin: 40px 350px auto 50px;
+  }
+  .section-abst h1 {
+    font-size: 35px;
+  }
+  .section-abst p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-abst {
+    margin: 20px 200px auto 30px;
+    height: 200px;
+  }
+  .section-abst h1 {
+    font-size: 25px;
+  }
+  .section-abst p {
+    font-size: 15px;
+  }
+  .section-abst a {
+    width: 70px;
+    height: 28px;
+    font-size: 10px;
   }
 }

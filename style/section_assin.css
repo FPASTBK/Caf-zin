@@ -73,7 +73,64 @@ p {
 }
 
 @media (max-width: 767px) {
-  .section-input {
-    margin-left: -150px;
+  .section-assin-top {
+    grid-template-columns: 1fr;
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .section-assin-top h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .section-assin-top p {
+    font-size: 16px;
+  }
+  .section-assin .section-input {
+    width: 500px;
+    height: 30px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-section {
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-assin {
+    height: 150px;
+    margin-bottom: 37px;
+  }
+  .section-assin-top {
+    width: 500px;
+    height: 150px;
+  }
+  .section-assin-top h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .section-assin-top p {
+    font-size: 14px;
+  }
+  .section-assin .section-input {
+    width: 400px;
+    height: 30px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px;
+  }
+  .button-section {
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
   }
 }
