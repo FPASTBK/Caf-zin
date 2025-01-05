@@ -1,3 +1,4 @@
+@import url(./reset.css);
 @import url(./fonts.css);
 @import url(./header.css);
 @import url(./section1.css);
@@ -7,21 +8,13 @@
 @import url(./section_assin.css);
 @import url(./footer.css);
 
-body,
-h1,
-a,
-p {
-  margin: 0px 0px;
-}
-
 body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Playflair Display", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
   background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
+  overflow-x: hidden;
 }
