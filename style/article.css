@@ -19,7 +19,7 @@ article {
 
 .article-feed::before {
   content: "“";
-  font-family: playfair display;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 220px;
   color: #603809;
