@@ -12,6 +12,12 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 576px) {
+  .font-small-2 {
+    font-size: 16px;
+  }
+}
+
 .font-mid {
   font-family: clicker script, Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -26,11 +32,23 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 576px) {
+  .font-mid-2 {
+    font-size: 22px;
+  }
+}
+
 .font-larg {
   font-family: clicker script, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 13.75rem;
   color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .font-larg {
+    font-size: 7.5rem;
+  }
 }
 
 .section-font-top {

@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Cafézin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/index.css" />
-    <title>Cafézin</title>
   </head>
 
   <body>
-    <img class="img-position logo" src="./assets/cafe-top.png" alt="cafe top" />
-    <header class="header-top">
-      <div class="header-menu">
-        <a class="font-mid">Cafézin</a>
-        <a class="font-small" href="./">Home</a>
-        <a class="font-small" href="./">Menu</a>
-        <a class="font-small" href="./">Sobre</a>
-        <a class="font-small" href="./">Contato</a>
+    <div class="header-menu">
+      <div class="header-menu-content">
+        <a class="logo font-mid">Cafézin</a>
+        <div class="menu">
+          <a class="font-small" href="#home">Home</a>
+          <a class="font-small" href="#menu">Menu</a>
+          <a class="font-small" href="#about">Sobre</a>
+          <a class="font-small" href="#contact">Contato</a>
+        </div>
       </div>
-      <div class="header-menu-2">
+    </div>
+
+    <header>
+      <img
+        class="img-position logo"
+        src="./assets/cafe-top.png"
+        alt="cafe top"
+      />
+
+      <div class="header-content">
         <h2 class="font-mid-2">Nós temos sua manhã coberta com</h2>
         <h1 class="font-larg">Café</h1>
         <p class="font-small-2">
@@ -34,7 +44,7 @@
         <a class="button" href="./">Peça agora</a>
       </div>
     </header>
-    <section class="section-1">
+    <section id="home" class="section-1">
       <div class="section-content">
         <h1 class="section-font-top">Descubra o melhor café</h1>
         <p class="section-font-text">
@@ -48,7 +58,7 @@
       </div>
       <img src="./assets/caneca.png" alt="caneca cafe" />
     </section>
-    <nav>
+    <section id="menu">
       <div class="produtos-top">
         <h1 class="section-font-top">
           Aproveite um novo estilo de blend de café
@@ -94,6 +104,8 @@
           Nós não apenas fazemos seu café, nós melhoramos o seu dia!
         </p>
       </div>
+    </section>
+    <section id="about">
       <div class="qualidade">
         <div class="qualidade-c">
           <img src="./assets/coffee-beans-1.svg" alt="sementes-cafe" />
@@ -128,7 +140,7 @@
         <h2 class="footer-font-top-nav">Comece hoje mesmo.</h2>
         <a class="button" href="./">Junte-se a nós</a>
       </div>
-    </nav>
+    </section>
     <section class="section-end">
       <img class="section-img" src="./assets/cafe-copo.png" alt="cafe copo" />
       <div class="section-abst">
@@ -183,7 +195,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="contact">
       <img class="section-img" src="./assets/cafe-footer.png" alt="footer" />
       <div class="container-footer">
         <div class="footer">
@@ -221,5 +233,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script/index.js"></script>
   </body>
 </html>
