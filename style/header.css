@@ -46,6 +46,7 @@ header {
 }
 
 .header-menu-content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,6 +62,11 @@ header {
   }
 }
 
+.header-menu-content .logo {
+  position: absolute;
+  left: 0;
+}
+
 .header-menu-content .menu {
   display: flex;
   align-items: center;
@@ -69,7 +75,7 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .header-menu-content .menu {
     gap: 20px;
   }
