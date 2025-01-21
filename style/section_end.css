@@ -1,15 +1,22 @@
-.section-abst {
-  position: absolute;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4;
-  grid-column: 1;
-  margin: 135px 614px 135px 93px;
+.section-end {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 574px;
 }
 
 .section-img {
   position: absolute;
-  z-index: -10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-abst {
+  position: absolute;
+  max-width: 659px;
+  padding: 24px 24px 24px 135px;
 }
 
 .section-abst h1,
@@ -32,41 +39,53 @@ p {
 
 /*RESPONSIVO*/
 
-@media (max-width: 991px) {
+@media (max-width: 1086px) {
+  .section-end {
+    height: 395px;
+  }
   .section-abst {
-    margin: 80px 350px auto 50px;
+    padding-left: 80px;
+    max-width: 400px;
   }
   .section-abst h1 {
-    font-size: 40px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 767px) {
   .section-abst {
-    margin: 40px 350px auto 50px;
+    padding-left: 40px;
   }
-  .section-abst h1 {
-    font-size: 35px;
-  }
+
   .section-abst p {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .section-abst {
-    margin: 20px 200px auto 30px;
-    height: 200px;
+  .section-end {
+    height: 300px;
   }
-  .section-abst h1 {
-    font-size: 25px;
+  .section-abst {
+    padding-left: 24px;
+    max-width: 300px;
   }
   .section-abst p {
     font-size: 15px;
   }
-  .section-abst a {
-    width: 70px;
-    height: 28px;
-    font-size: 10px;
+}
+
+@media (max-width: 468px) {
+  .section-img {
+    object-position: left;
+  }
+
+  .section-abst {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
   }
 }
