@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Menu
-  const headerMenu = document.querySelector(".header-menu");
+  // Seleciona o cabeçalho fixo
+  const topNavigation = document.querySelector(".top-navigation");
 
+  // Altera cor de fundo ao rolar a página
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
-      headerMenu.classList.add("scrolled");
+      topNavigation.classList.add("scrolled");
     } else {
-      headerMenu.classList.remove("scrolled");
+      topNavigation.classList.remove("scrolled");
     }
   });
 
-  // Carousel
-  const feedbacks = document.querySelectorAll(".article-feed");
+  // Carousel de feedback
+  const feedbacks = document.querySelectorAll(".feedback-card");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
 
@@ -36,5 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn.addEventListener("click", nextFeedback);
   prevBtn.addEventListener("click", prevFeedback);
 
+  // Troca automática de feedback a cada 5 segundos
   setInterval(nextFeedback, 5000);
 });

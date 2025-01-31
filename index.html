@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
     <title>Cafézin</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,244 +18,266 @@
   </head>
 
   <body>
-    <div class="header-menu">
-      <div class="header-menu-content">
-        <a class="logo font-mid">Cafézin</a>
-        <div class="menu">
-          <a class="font-small" href="#home">Home</a>
-          <a class="font-small" href="#menu">Menu</a>
-          <a class="font-small" href="#about">Sobre</a>
-          <a class="font-small" href="#contact">Contato</a>
-        </div>
-      </div>
-    </div>
+    <!-- Fixed navigation -->
+    <header class="top-navigation">
+      <div class="navigation-content">
+        <!-- Logo -->
+        <a href="#" class="site-logo heading-script-md">Cafézin</a>
 
-    <header>
+        <!-- Navigation links -->
+        <nav class="navigation-links">
+          <a class="nav-link text-sm" href="#home">Home</a>
+          <a class="nav-link text-sm" href="#menu">Menu</a>
+          <a class="nav-link text-sm" href="#about">Sobre</a>
+          <a class="nav-link text-sm" href="#contact">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main headline / banner -->
+    <section class="coffee-headline">
       <img
-        class="img-position logo"
+        class="coffee-headline-bg"
         src="./img/coffee-headline.png"
-        alt="cafe top"
+        alt="Imagem de café em destaque no topo"
       />
 
-      <div class="header-content">
-        <h2 class="font-mid-2">Nós temos sua manhã coberta com</h2>
-        <h1 class="font-larg">Café</h1>
-        <p class="font-small-2">
+      <div class="coffee-headline-content">
+        <h2 class="coffee-headline-subtitle heading-md-white">
+          Nós temos sua manhã coberta com
+        </h2>
+        <h1 class="coffee-headline-title heading-script-lg">Café</h1>
+        <p class="coffee-headline-description text-md-white">
           É melhor começar o dia com uma xícara de café. Descubra os melhores
           sabores de café que você já provou. Nós oferecemos o melhor para
           nossos clientes.
         </p>
-        <a class="button" href="#">Peça agora</a>
+        <a class="btn btn-primary" href="#">Peça agora</a>
       </div>
-    </header>
+    </section>
 
-    <section id="home" class="section-1">
-      <div class="section-content">
-        <div class="section-text">
-          <h1 class="section-font-top">Descubra o melhor café</h1>
-          <p class="section-font-text">
-            <span class="section-font-text-2">Cafézin</span> é uma cafeteria que
+    <!-- Home section (anchor) -->
+    <section id="home" class="intro-section">
+      <div class="intro-section-container">
+        <div class="intro-section-text">
+          <h1 class="section-title">Descubra o melhor café</h1>
+          <p class="section-description">
+            <span class="section-highlight">Cafézin</span> é uma cafeteria que
             oferece café de qualidade, ajudando a aumentar sua produtividade e
             melhorar seu humor. Tomar uma xícara de café é bom, mas tomar uma
             xícara de café de verdade é ainda melhor. Não há dúvida de que você
             vai gostar mais deste café do que de qualquer outro que já provou
           </p>
-          <a class="button" href="#">Saiba mais</a>
+          <a class="btn btn-primary" href="#">Saiba mais</a>
         </div>
-        <div class="img-container">
-          <img src="./img/coffe-beans-mug.png" alt="caneca cafe" />
+        <div class="intro-image-wrapper">
+          <img
+            src="./img/coffe-beans-mug.png"
+            alt="Caneca de café com grãos de café"
+          />
         </div>
       </div>
     </section>
 
-    <section id="menu">
-      <div class="produtos-top">
-        <h1 class="section-font-top">
-          Aproveite um novo estilo de blend de café
-        </h1>
-        <p class="section-font-text">
+    <!-- Menu section -->
+    <section id="menu" class="products-section">
+      <div class="products-section-header">
+        <h1 class="section-title">Aproveite um novo estilo de blend de café</h1>
+        <p class="section-text">
           Explore todos os sabores de café conosco. Sempre há uma nova xícara
           que vale a pena experimentar.
         </p>
       </div>
-      <div class="produtos">
-        <div class="menu-produtos-c">
-          <img src="./img/capuccino.png" alt="capuccino" />
-          <h2 class="produtos-font-top">Cappuccino</h2>
-          <p class="produtos-font-mid">Café 50% | Leite 50%</p>
-          <h3 class="produtos-font-bottom">R$ 8,50</h3>
-          <a class="button" href="#">Peça agora</a>
+      <div class="products-list">
+        <div class="product-card">
+          <img src="./img/capuccino.png" alt="Cappuccino" />
+          <h2 class="products-title">Cappuccino</h2>
+          <p class="products-text">Café 50% | Leite 50%</p>
+          <h3 class="products-price">R$ 8,50</h3>
+          <a class="btn btn-primary" href="#">Peça agora</a>
         </div>
-        <div class="menu-produtos-c">
-          <img src="./img/mocha.png" alt="mocha" />
-          <h2 class="produtos-font-top">Mocha</h2>
-          <p class="produtos-font-mid">Café 50% | Leite 50%</p>
-          <h3 class="produtos-font-bottom">R$ 8,50</h3>
-          <a class="button" href="#">Peça agora</a>
+        <div class="product-card">
+          <img src="./img/mocha.png" alt="Mocha" />
+          <h2 class="products-title">Mocha</h2>
+          <p class="products-text">Café 50% | Leite 50%</p>
+          <h3 class="products-price">R$ 8,50</h3>
+          <a class="btn btn-primary" href="#">Peça agora</a>
         </div>
-        <div class="menu-produtos-c">
-          <img src="./img/macchiato.png" alt="macchiato" />
-          <h2 class="produtos-font-top">Macchiato</h2>
-          <p class="produtos-font-mid">Café 50% | Leite 50%</p>
-          <h3 class="produtos-font-bottom">R$ 8,50</h3>
-          <a class="button" href="#">Peça agora</a>
+        <div class="product-card">
+          <img src="./img/macchiato.png" alt="Macchiato" />
+          <h2 class="products-title">Macchiato</h2>
+          <p class="products-text">Café 50% | Leite 50%</p>
+          <h3 class="products-price">R$ 8,50</h3>
+          <a class="btn btn-primary" href="#">Peça agora</a>
         </div>
-        <div class="menu-produtos-c">
-          <img src="./img/espresso.png" alt="espresso" />
-          <h2 class="produtos-font-top">Expresso</h2>
-          <p class="produtos-font-mid">Café 50% | Leite 50%</p>
-          <h3 class="produtos-font-bottom">R$ 8,50</h3>
-          <a class="button" href="#">Peça agora</a>
+        <div class="product-card">
+          <img src="./img/espresso.png" alt="Expresso" />
+          <h2 class="products-title">Expresso</h2>
+          <p class="products-text">Café 50% | Leite 50%</p>
+          <h3 class="products-price">R$ 8,50</h3>
+          <a class="btn btn-primary" href="#">Peça agora</a>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="qualidade-produtos">
-        <h1 class="section-font-top">Por que somos diferentes?</h1>
-        <p class="section-font-text">
+    <!-- About section -->
+    <section id="about" class="about-section">
+      <div class="about-section-header">
+        <h1 class="section-title">Por que somos diferentes?</h1>
+        <p class="section-text">
           Nós não apenas fazemos seu café, nós melhoramos o seu dia!
         </p>
       </div>
-      <div class="qualidade">
-        <div class="qualidade-c">
-          <img src="./img/icons/coffee-beans.png" alt="sementes-cafe" />
-          <h2 class="qualidade-font-top">Grãos Supremos</h2>
-          <p class="section-font-text">
-            Grãos que proporcionam um sabor incrível
-          </p>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <img
+            src="./img/icons/coffee-beans.png"
+            alt="Ícone de grãos de café"
+          />
+          <h2 class="about-card-title">Grãos Supremos</h2>
+          <p class="section-text">Grãos que proporcionam um sabor incrível</p>
         </div>
-        <div class="qualidade-c">
-          <img src="./img/icons/badge.png" alt="sementes-cafe" />
-          <h2 class="qualidade-font-top">Alta Qualidade</h2>
-          <p class="section-font-text">Oferecemos a mais alta qualidade</p>
+        <div class="about-card">
+          <img src="./img/icons/badge.png" alt="Ícone de alta qualidade" />
+          <h2 class="about-card-title">Alta Qualidade</h2>
+          <p class="section-text">Oferecemos a mais alta qualidade</p>
         </div>
-        <div class="qualidade-c">
-          <img src="./img/icons/coffee-cup.png" alt="sementes-cafe" />
-          <h2 class="qualidade-font-top">Extraordinário</h2>
-          <p class="section-font-text">
-            Um café como você nunca experimentou antes
-          </p>
+        <div class="about-card">
+          <img src="./img/icons/coffee-cup.png" alt="Ícone de xícara de café" />
+          <h2 class="about-card-title">Extraordinário</h2>
+          <p class="section-text">Um café como você nunca experimentou antes</p>
         </div>
-        <div class="qualidade-c">
-          <img src="./img/icons/best-price.png" alt="sementes-cafe" />
-          <h2 class="qualidade-font-top">Preço Acessível</h2>
-          <p class="section-font-text">Nossos preços são fáceis de pagar</p>
+        <div class="about-card">
+          <img src="./img/icons/best-price.png" alt="Ícone de melhor preço" />
+          <h2 class="about-card-title">Preço Acessível</h2>
+          <p class="section-text">Nossos preços são fáceis de pagar</p>
         </div>
       </div>
-      <div class="produtos-footer">
-        <p class="section-font-text">
+
+      <div class="about-section-footer">
+        <p class="section-text">
           Grandes ideias começam com um ótimo café, deixe-nos ajudá-lo a
           alcançar isso.
         </p>
-        <h2 class="footer-font-top-nav">Comece hoje mesmo.</h2>
-        <a class="button" href="#">Junte-se a nós</a>
+        <h2 class="footer-highlight">Comece hoje mesmo.</h2>
+        <a class="btn btn-primary" href="#">Junte-se a nós</a>
       </div>
     </section>
 
-    <section class="section-end">
+    <!-- Promotional section -->
+    <section class="promo-section">
       <img
-        class="section-img"
+        class="promo-section-bg"
         src="./img/coffee-cup-banner.png"
-        alt="cafe copo"
+        alt="Copo de café em destaque"
       />
-      <div class="section-end-container">
-        <div class="section-abst">
-          <h1 class="end-font-top">Tenha a chance de ter uma Manhã incrível</h1>
-          <p class="end-font-p">
+      <div class="promo-section-container">
+        <div class="promo-content">
+          <h1 class="promo-title">Tenha a chance de ter uma Manhã incrível</h1>
+          <p class="promo-text">
             Estamos dando a você uma oportunidade única de experimentar uma vida
             melhor com café.
           </p>
-          <a class="button">Peça agora</a>
+          <a class="btn btn-primary" href="#">Peça agora</a>
         </div>
       </div>
     </section>
 
-    <section id="feedback">
-      <div class="article-top">
-        <h1 class="section-font-top">Nosso feedback de perfeição no café</h1>
-        <p class="section-font-text">
+    <!-- Feedback section -->
+    <section id="feedback" class="feedback-section">
+      <div class="feedback-header">
+        <h1 class="section-title">Nosso feedback de perfeição no café</h1>
+        <p class="section-text">
           Nossos clientes têm coisas incríveis a dizer sobre nós.
         </p>
       </div>
 
-      <div class="article-center">
+      <div class="feedback-carousel-container">
         <div class="carousel">
-          <button class="prev-btn">
-            <img src="./img/icons/arrow-left.svg" alt="arrow-left" />
+          <!-- Previous button -->
+          <button class="btn-carousel prev-btn">
+            <img src="./img/icons/arrow-left.svg" alt="Seta para a esquerda" />
           </button>
 
+          <!-- Carousel items -->
           <div class="carousel-container">
-            <div class="article-feed active">
-              <p class="article-font-p">
+            <!-- Slide 1 -->
+            <article class="feedback-card active">
+              <p class="feedback-text">
                 1. Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially
-                unchanged.
+                standard dummy text ever since the 1500s...
               </p>
-              <div class="article-avtr">
-                <h2 class="article-font-h2">Pedro Lima</h2>
-                <h3 class="article-font-h3">Project Manager</h3>
-                <img src="./img/profile.png" alt="avatar" />
+              <div class="feedback-author-info">
+                <h2 class="feedback-author">Pedro Lima</h2>
+                <h3 class="feedback-author-role">Project Manager</h3>
+                <img
+                  src="./img/profile.png"
+                  alt="Foto de perfil de Pedro Lima"
+                />
               </div>
-            </div>
+            </article>
 
-            <div class="article-feed">
-              <p class="article-font-p">
+            <!-- Slide 2 -->
+            <article class="feedback-card">
+              <p class="feedback-text">
                 2. Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially
-                unchanged.
+                standard dummy text ever since the 1500s...
               </p>
-              <div class="article-avtr">
-                <h2 class="article-font-h2">Mariana Souza</h2>
-                <h3 class="article-font-h3">Designer</h3>
-                <img src="./img/profile.png" alt="avatar" />
+              <div class="feedback-author-info">
+                <h2 class="feedback-author">Mariana Souza</h2>
+                <h3 class="feedback-author-role">Designer</h3>
+                <img
+                  src="./img/profile.png"
+                  alt="Foto de perfil de Mariana Souza"
+                />
               </div>
-            </div>
+            </article>
 
-            <div class="article-feed">
-              <p class="article-font-p">
+            <!-- Slide 3 -->
+            <article class="feedback-card">
+              <p class="feedback-text">
                 3. Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially
-                unchanged.
+                standard dummy text ever since the 1500s...
               </p>
-              <div class="article-avtr">
-                <h2 class="article-font-h2">Carlos Mendes</h2>
-                <h3 class="article-font-h3">Empresário</h3>
-                <img src="./assets/profile.png" alt="avatar" />
+              <div class="feedback-author-info">
+                <h2 class="feedback-author">Carlos Mendes</h2>
+                <h3 class="feedback-author-role">Developer</h3>
+                <img
+                  src="./img/profile.png"
+                  alt="Foto de perfil de Carlos Mendes"
+                />
               </div>
-            </div>
+            </article>
           </div>
 
-          <button class="next-btn">
-            <img src="./img/icons/arrow-right.svg" alt="arrow-right" />
+          <!-- Next button -->
+          <button class="btn-carousel next-btn">
+            <img src="./img/icons/arrow-right.svg" alt="Seta para a direita" />
           </button>
         </div>
       </div>
     </section>
 
-    <section class="section-assin">
-      <img src="./img/background-coffee.png" alt="cafe xicara" />
-      <div class="section-assin-top">
-        <h2 class="section-font-top-2">
+    <!-- Newsletter section -->
+    <section class="newsletter-section">
+      <img
+        class="newsletter-bg"
+        src="./img/background-coffee.png"
+        alt="Fundo de café"
+      />
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">
           Assine para receber as últimas notícias
         </h2>
-        <p class="end-font-p">
+        <p class="newsletter-description">
           Não perca nossas últimas novidades, atualizações, dicas e ofertas
           especiais.
         </p>
-        <form class="section-input" action="#">
+        <form class="newsletter-form" action="#">
           <input
             type="email"
             name="email"
@@ -259,70 +285,97 @@
             required
             placeholder="Insira seu e-mail"
           />
-          <button type="submit" id="btn-subscribe" href="#">Assinar</button>
+          <button type="submit" class="btn btn-primary" id="btn-subscribe">
+            Assinar
+          </button>
         </form>
       </div>
     </section>
 
-    <section id="contact">
-      <img class="section-img" src="./img/coffee-footer.png" alt="footer" />
-      <div class="container-footer">
-        <div class="social">
-          <p class="footer-font-top">Cafézin</p>
-          <div class="footer-img">
-            <img
-              class="svg"
-              src="./img/icons/social/facebook.svg"
-              alt="facebook"
-            />
-            <img
-              class="svg"
-              src="./img/icons/social/instagram.svg"
-              alt="instagram"
-            />
-            <img
-              class="svg"
-              src="./img/icons/social/youtube.svg"
-              alt="youtube"
-            />
-            <img class="svg" src="/img/icons/social/twitter.svg" alt="x" />
+    <!-- Footer (contact) -->
+    <footer id="contact" class="site-footer">
+      <img
+        class="site-footer-bg"
+        src="./img/coffee-footer.png"
+        alt="Imagem de fundo do rodapé"
+      />
+      <div class="footer-content">
+        <!-- Social and logo -->
+        <div class="footer-social">
+          <p class="footer-logo">Cafézin</p>
+          <div class="footer-social-icons">
+            <a href="#">
+              <img
+                class="svg"
+                src="./img/icons/social/facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="svg"
+                src="./img/icons/social/instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="svg"
+                src="./img/icons/social/youtube.svg"
+                alt="YouTube"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="svg"
+                src="./img/icons/social/twitter.svg"
+                alt="Twitter"
+              />
+            </a>
           </div>
         </div>
-        <div class="menu">
-          <div class="footer-1">
-            <h2 class="footer-font-top-2">Sobre</h2>
-            <div class="footer-text">
-              <a class="footer-font-text" href="#">Menu</a>
-              <a class="footer-font-text" href="#">Destaques</a>
-              <a class="footer-font-text" href="#">Notícias & Blogs</a>
-              <a class="footer-font-text" href="#">Ajuda & Suporte</a>
+
+        <!-- Footer menus -->
+        <div class="footer-menu">
+          <div class="footer-column">
+            <h2 class="footer-section-title">Sobre</h2>
+            <div class="footer-column-links">
+              <a class="footer-link-text" href="#">Menu</a>
+              <a class="footer-link-text" href="#">Destaques</a>
+              <a class="footer-link-text" href="#">Notícias & Blogs</a>
+              <a class="footer-link-text" href="#">Ajuda & Suporte</a>
             </div>
           </div>
-          <div class="footer-1">
-            <h2 class="footer-font-top-2">Empesa</h2>
-            <div class="footer-text">
-              <a class="footer-font-text" href="#">Como trabalhamos</a>
-              <a class="footer-font-text" href="#">Termos de serviço</a>
-              <a class="footer-font-text" href="#">Preços</a>
-              <a class="footer-font-text" href="#">FAQ</a>
+          <div class="footer-column">
+            <h2 class="footer-section-title">Empresa</h2>
+            <div class="footer-column-links">
+              <a class="footer-link-text" href="#">Como trabalhamos</a>
+              <a class="footer-link-text" href="#">Termos de serviço</a>
+              <a class="footer-link-text" href="#">Preços</a>
+              <a class="footer-link-text" href="#">FAQ</a>
             </div>
           </div>
-          <div class="footer-1">
-            <h2 class="footer-font-top-2">Contato</h2>
-            <div class="footer-text">
-              <span class="footer-font-text"
-                >Avenida Álvares da Rocha, nº 125 <br />
+          <div class="footer-column">
+            <h2 class="footer-section-title">Contato</h2>
+            <div class="footer-column-links">
+              <span class="footer-link-text"
+                >Avenida Álvares da Rocha, nº 125<br />
                 Engenho da Rainha - RJ - 20761-310</span
               >
-              <a class="footer-font-text" href="#">+55 24 9999-9999</a>
-              <a class="footer-font-text" href="#">contato@cafezin.com</a>
-              <a class="footer-font-text" href="#">www.cafezin.com</a>
+              <a class="footer-link-text" href="tel:+5524999999999"
+                >+55 24 9999-9999</a
+              >
+              <a class="footer-link-text" href="mailto:contato@cafezin.com"
+                >contato@cafezin.com</a
+              >
+              <a class="footer-link-text" href="#">www.cafezin.com</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
+    <!-- JS -->
     <script src="js/index.js"></script>
   </body>
 </html>
