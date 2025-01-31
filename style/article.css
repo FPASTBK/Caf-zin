@@ -1,176 +1,229 @@
-article {
-  display: grid;
-  grid-template-columns: 1fr;
-  /*margin-top: 760px;
-  margin-bottom: 240px;*/
-  margin: auto auto;
-  padding-top: 760px;
-  padding-bottom: 240px;
+section#feedback {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+  padding-bottom: 100px;
 }
 
 .article-top {
-  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .article-top {
+    margin-top: 64px;
+  }
+}
+
+.article-top h1 {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 576px) {
+  .article-top h1 {
+    font-size: 32px;
+  }
+}
+
+.article-top p {
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 576px) {
+  .article-top p {
+    font-size: 16px;
+  }
+}
+
+.article-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+@media screen and (max-width: 576px) {
+  .article-center {
+    padding: 0;
+  }
+}
+
+.carousel {
+  position: relative;
+  display: flex;
   align-items: center;
-  justify-self: center;
-  width: 890px;
-  height: 194px;
+  width: 100%;
+  max-width: 980px;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56px;
+}
+
+.article-feed {
+  display: none;
+}
+
+.article-feed.active {
+  display: flex;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+  margin-bottom: 56px;
+  border-radius: 16px;
+  background-color: #f9c06a;
+  box-shadow: rgba(249, 192, 106, 0.22) 0px 6px 12px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev-btn {
+  left: -41px;
+}
+.next-btn {
+  right: -41px;
+}
+
+@media screen and (max-width: 576px) {
+  .prev-btn,
+  .next-btn {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0;
+  }
+
+  .prev-btn {
+    left: 50%;
+    transform: translateX(-52px);
+    bottom: -64px;
+  }
+  .next-btn {
+    right: 50%;
+    transform: translateX(52px);
+    bottom: -64px;
+  }
+}
+
+.prev-btn img,
+.next-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.article-feed {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  text-align: center;
+  border: 1px solid rgba(249, 192, 106, 0.42);
+  background-color: #fff9f1;
+}
+
+@media screen and (max-width: 992px) {
+  .article-feed {
+    padding: 80px 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .article-feed {
+    padding: 24px 36px 80px 36px;
+  }
+}
+
+.article-feed p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 29px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #707070;
+}
+
+@media screen and (max-width: 576px) {
+  .article-feed p {
+    font-size: 16px;
+    margin-top: 60px;
+  }
+}
+
+.article-feed .article-avtr {
+  text-align: center;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 576px) {
+  .article-feed .article-avtr h2 {
+    font-size: 24px;
+  }
+
+  .article-feed .article-avtr h3 {
+    font-size: 18px;
+  }
+}
+
+.article-feed .article-avtr img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -56px;
+  width: 112px;
+  height: 112px;
+  border-radius: 16px;
 }
 
 .article-feed::before {
   content: "“";
   font-family: "Playfair Display", sans-serif;
+  position: absolute;
+  top: 54px;
+  left: 30px;
+  line-height: 112px;
   font-weight: 700;
   font-size: 220px;
   color: #603809;
-  position: absolute;
-  margin-bottom: 350px;
-  z-index: 100px;
 }
 
-.article-feed::after {
-  position: absolute;
-  margin-left: 935px;
-  content: "⭢";
-  text-align: center;
-  font-size: 25px;
-  color: #603809;
-  background-color: #f9c06a;
-  border-radius: 4px;
-  padding: 30px 30px;
-}
-
-article::after {
-  position: absolute;
-  margin-left: 156px;
-  margin-top: 400px;
-  content: "⭠";
-  text-align: center;
-  font-size: 25px;
-  color: #603809;
-  background-color: #f9c06a;
-  border-radius: 4px;
-  padding: 30px 30px;
-}
-
-.article-top p {
-  justify-self: center;
-  align-self: center;
-}
-.article-top h1 {
-  grid-column: 1/3;
-}
-
-.article-feed {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  width: 980px;
-  height: 524px;
-  background-color: #fff9f1;
-  border: 1px solid #ffeed8;
-  /*margin-left: 193px;*/
-  margin: auto auto;
-  position: relative;
-}
-
-.article-feed p {
-  padding: 150px;
-  text-align: center;
-  align-content: center;
-}
-
-.article-avtr {
-  grid-column: 1/3;
-  justify-self: center;
-  align-content: center;
-}
-
-.article-avtr img {
-  margin-left: 29px;
-  border-radius: 16px;
-}
-
-.article-avtr h3 {
-  margin-left: 12px;
-  margin-top: 0px;
-  margin-bottom: 45px;
-}
-
-.article-avtr h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.article-avtr {
-  margin-top: -90px;
-}
-
-/*RESPONSIVO*/
-
-@media (max-width: 991px) {
-  article {
-    padding: 500px 0px 150px 0px;
-  }
-  .article-top p {
-    margin-top: -70px;
-  }
-  .article-feed p {
-    padding: 80px 150px 150px 150px;
-  }
-  .article-feed {
-    height: 450px;
-  }
-  article::after,
-  .article-feed::after,
+@media screen and (max-width: 992px) {
   .article-feed::before {
-    display: none;
-  }
-  .article-top h1 {
-    justify-self: center;
-  }
-}
-
-@media (max-width: 767px) {
-  article {
-    padding-top: 350px;
-  }
-  .article-feed {
-    width: 700px;
-  }
-  .article-feed p {
-    padding: 60px 100px 110px 100px;
-  }
-  .article-top {
-    width: 700px;
-    font-size: 35px;
+    top: 0px;
+    left: 30px;
+    line-height: 170px;
+    font-size: 156px;
   }
 }
 
-@media (max-width: 576px) {
-  article {
-    padding-top: 250px;
-    padding-bottom: 100px;
-  }
-  .article-top {
-    width: 500px;
-    height: 100px;
-    align-content: center;
-    padding-bottom: 10px;
-  }
-  .article-top h1 {
-    font-size: 30px;
-    padding-bottom: 10px;
-  }
-  .article-top p {
-    margin-top: 0px;
-    font-size: 15px;
-  }
-  .article-feed {
-    width: 500px;
-  }
-  .article-feed p {
-    font-size: 15px;
-    padding: 70px 60px 110px 60px;
+@media screen and (max-width: 576px) {
+  .article-feed::before {
+    line-height: 120px;
+    font-size: 100px;
   }
 }
