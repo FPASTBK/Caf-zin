@@ -40,3 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Troca automática de feedback a cada 5 segundos
   setInterval(nextFeedback, 5000);
 });
+
+// scroll suave
+document.querySelectorAll( 'a[href^="#"]' ).forEach( anchor => {
+  anchor.addEventListener( 'click' , function( e ) {
+    e.preventDefault();
+    document.querySelector( this.getAttribute( 'href') ).scrollIntoView({ behavior: 'smooth'});
+  });
+});
